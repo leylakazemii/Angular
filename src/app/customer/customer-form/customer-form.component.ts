@@ -28,7 +28,7 @@ export class CustomerFormComponent implements OnInit {
       lastName: ['', Validators.required],
       dateOfBirth: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phoneNumber: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
+      phoneNumber: ['', [Validators.required]],
       bankAccountNumber: ['', Validators.required],
     });
   }
